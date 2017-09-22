@@ -64,3 +64,36 @@ body {
   color: #41c150;
   margin-top: 5%;
 }
+
+/*Модальное окно*/
+
+#myModal #text #head {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#myModal #text img {
+  max-height: 300px;
+  max-width: 90%;
+}
+
+#myModal #text #price {
+  color: #37b252;
+  font-style: italic;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#myModal #options{
+  max-width: 500px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  background-color: #dddbdb;
+  box-sizing: border-box;
+}
+
+#myModal #options #div h{
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: bold;
+}

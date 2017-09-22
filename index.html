@@ -41,18 +41,36 @@
 
 	<div id="wrapper">
 	  <div id="articles" class="articles">
-			<input hidden="true" />
 		</div>
 	</div>
+
 
 	<div id="myModal" class="modal fade" tabindex="-1">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button class="close" data-dismiss="modal">x</button>
-					<h4 class="modal-title">Заголовок окна</h4>
+					<h4 class="modal-title">Описание товара</h4>
 				</div>
-				<div class="modal-body" id="text"></div>
+
+				<div class="modal-body row" id="text">
+					<div class="col-md-8">
+						<h id="head"></h></br>
+						<h id="min_description"></h></br>
+						<div id="img"></div></br>
+						<h id="price"></h></br>
+							<div id="options">
+								<h style="font-weight: bold">Параметры:</h></br>
+								<div id="div">Оригинальный артикул: <h id="article"></h></div>
+								<div id="div">Применяемость: <h id="applicability"></h></div>
+							</div>
+						</div>
+					<div class="col-md-4" style="margin-left: -50px;">
+						<h id="full_description"></h>
+					</div>
+				</div>
+
+
 				<div class="modal-footer">
 					<button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
 				</div>
