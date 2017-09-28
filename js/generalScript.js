@@ -1,6 +1,5 @@
   $(document).ready (function () {
-  	addNodes();
-    click()
+    init();
   });
 
 function addNodes() {
@@ -11,11 +10,17 @@ function addNodes() {
 };
 
 
-function click() {
-$("article").bind("click", function (event) {
-  console.log(event);
-  var id = parseInt(event.currentTarget.id);
-  var item = getDetail(id);
+function init() {
+  addNodes();
+  $("article").bind("click", function (event) {
+    console.log(event);
+    var id = parseInt(event.currentTarget.id);
+    populateModal(id);
+  });
+};
+
+function populateModal(itemId) {
+  var item = getDetail(itemId);
   $("#myModal").find("#head").html(item.name);
   $("#myModal").find("#min_description").html(item.description);
   $("#myModal").find("#img").html("<img src='" +item.url_img+"'/>");
@@ -24,7 +29,6 @@ $("article").bind("click", function (event) {
   $("#myModal").find("#applicability").html(item.applicability);
   $("#myModal").find("#full_description").html(item.full_description);
   $("#myModal").modal('show');
-});
 };
 
 function getDetail(id) {
