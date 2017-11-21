@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="img/icon.png" rel="shortcut icon" type="image/x-icon" />
 	<title>AutoParts - Главная</title>
-
+	<meta name="discription" content="Магазин автозапчастей">
+	<meta name="Keywords" content="autoparts, запчасти, автозапчасти">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="img/icon.png" rel="shortcut icon" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
@@ -24,11 +26,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <body>
-
-	<nav class="navbar navbar-default">
+	<header>
+	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">AutoParts</a>
+				<a href="index.html" id="brand" class="navbar-brand">AutoParts</a>
 			</div>
 			<div>
 				<ul class="nav navbar-nav">
@@ -37,12 +39,27 @@
 					<li><a href="#">Обратная связь</a></li>
 				</ul>
 			</div>
+
+			<div id="reg_auth">
+				<a href="" title="Войти в кабинет пользователя">
+					<div class="btn">
+						Войти
+					</div>
+				</a>
+				<a href="" title="Зарегистрироваться">
+					<div class="btn">
+						Регистрация
+					</div>
+				</a>
+			</div>
 		</div>
-	</nav>
+		</nav>
+	</header>
+
+	<div id="modal_reg_auth" class="modal fade" tabindex="-1"></div>
 
 	<div id="wrapper">
-	  <div id="articles" class="articles">
-		</div>
+	  <div id="articles" class="articles"></div>
 	</div>
 
 
